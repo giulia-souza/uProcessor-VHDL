@@ -1,0 +1,629 @@
+Analysis & Synthesis report for MikroP
+Mon Dec 15 00:20:57 2025
+Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for Inferred Entity Instance: Eq05_Prime:CPU|Eq05_ULA:U_ULA|lpm_divide:Div0
+ 13. Parameter Settings for Inferred Entity Instance: Eq05_Prime:CPU|Eq05_ULA:U_ULA|lpm_mult:Mult0
+ 14. lpm_mult Parameter Settings by Entity Instance
+ 15. Port Connectivity Checks: "ramDisp:RAMeDISP"
+ 16. Port Connectivity Checks: "Eq05_Prime:CPU|Eq05_ULA:U_ULA"
+ 17. Port Connectivity Checks: "Eq05_Prime:CPU|Eq05_BancoRegistradores:U_BANCO_REG|Eq05_Registrador:uut0"
+ 18. Port Connectivity Checks: "Eq05_Prime:CPU"
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Dec 15 00:20:57 2025           ;
+; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
+; Revision Name                      ; MikroP                                          ;
+; Top-level Entity Name              ; MikroP                                          ;
+; Family                             ; MAX 10                                          ;
+; Total logic elements               ; 1,038                                           ;
+;     Total combinational functions  ; 942                                             ;
+;     Dedicated logic registers      ; 184                                             ;
+; Total registers                    ; 184                                             ;
+; Total pins                         ; 65                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 2                                               ;
+; Total PLLs                         ; 0                                               ;
+; UFM blocks                         ; 0                                               ;
+; ADC blocks                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; MikroP             ; MikroP             ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Maximum processors allowed for parallel compilation              ; All                ;                    ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                      ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
+; RAMDisp16bits.vhd                ; yes             ; User VHDL File               ; C:/Users/giuli/Downloads/Eq05-Valid/RAMDisp16bits.vhd                         ;         ;
+; MikroP.vhd                       ; yes             ; User VHDL File               ; C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd                                ;         ;
+; Hex.vhd                          ; yes             ; User VHDL File               ; C:/Users/giuli/Downloads/Eq05-Valid/Hex.vhd                                   ;         ;
+; Eq05-unidade_controle.vhd        ; yes             ; User VHDL File               ; C:/Users/giuli/Downloads/Eq05-Valid/Eq05-unidade_controle.vhd                 ;         ;
+; Eq05-ULA.vhd                     ; yes             ; User VHDL File               ; C:/Users/giuli/Downloads/Eq05-Valid/Eq05-ULA.vhd                              ;         ;
+; Eq05-rom.vhd                     ; yes             ; User VHDL File               ; C:/Users/giuli/Downloads/Eq05-Valid/Eq05-rom.vhd                              ;         ;
+; Eq05-Registrador.vhd             ; yes             ; User VHDL File               ; C:/Users/giuli/Downloads/Eq05-Valid/Eq05-Registrador.vhd                      ;         ;
+; Eq05-program_counter.vhd         ; yes             ; User VHDL File               ; C:/Users/giuli/Downloads/Eq05-Valid/Eq05-program_counter.vhd                  ;         ;
+; Eq05-Prime.vhd                   ; yes             ; User VHDL File               ; C:/Users/giuli/Downloads/Eq05-Valid/Eq05-Prime.vhd                            ;         ;
+; Eq05-maq_estados.vhd             ; yes             ; User VHDL File               ; C:/Users/giuli/Downloads/Eq05-Valid/Eq05-maq_estados.vhd                      ;         ;
+; Eq05-BancoRegistradores.vhd      ; yes             ; User VHDL File               ; C:/Users/giuli/Downloads/Eq05-Valid/Eq05-BancoRegistradores.vhd               ;         ;
+; 16bits2bcd.vhd                   ; yes             ; User VHDL File               ; C:/Users/giuli/Downloads/Eq05-Valid/16bits2bcd.vhd                            ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal241.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/aglobal241.inc      ;         ;
+; db/lpm_divide_bvl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/giuli/Downloads/Eq05-Valid/db/lpm_divide_bvl.tdf                     ;         ;
+; db/sign_div_unsign_dnh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/giuli/Downloads/Eq05-Valid/db/sign_div_unsign_dnh.tdf                ;         ;
+; db/alt_u_div_4le.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/giuli/Downloads/Eq05-Valid/db/alt_u_div_4le.tdf                      ;         ;
+; db/add_sub_t3c.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/giuli/Downloads/Eq05-Valid/db/add_sub_t3c.tdf                        ;         ;
+; db/add_sub_u3c.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/giuli/Downloads/Eq05-Valid/db/add_sub_u3c.tdf                        ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_mult.tdf        ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_add_sub.inc     ;         ;
+; multcore.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/multcore.inc        ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/bypassff.inc        ;         ;
+; altshift.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altshift.inc        ;         ;
+; db/mult_tns.tdf                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/giuli/Downloads/Eq05-Valid/db/mult_tns.tdf                           ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                            ;
++---------------------------------------------+--------------------------+
+; Resource                                    ; Usage                    ;
++---------------------------------------------+--------------------------+
+; Estimated Total logic elements              ; 1,038                    ;
+;                                             ;                          ;
+; Total combinational functions               ; 942                      ;
+; Logic element usage by number of LUT inputs ;                          ;
+;     -- 4 input functions                    ; 584                      ;
+;     -- 3 input functions                    ; 231                      ;
+;     -- <=2 input functions                  ; 127                      ;
+;                                             ;                          ;
+; Logic elements by mode                      ;                          ;
+;     -- normal mode                          ; 739                      ;
+;     -- arithmetic mode                      ; 203                      ;
+;                                             ;                          ;
+; Total registers                             ; 184                      ;
+;     -- Dedicated logic registers            ; 184                      ;
+;     -- I/O registers                        ; 0                        ;
+;                                             ;                          ;
+; I/O pins                                    ; 65                       ;
+;                                             ;                          ;
+; Embedded Multiplier 9-bit elements          ; 2                        ;
+;                                             ;                          ;
+; Maximum fan-out node                        ; ramDisp:RAMeDISP|clk_div ;
+; Maximum fan-out                             ; 160                      ;
+; Total fan-out                               ; 4146                     ;
+; Average fan-out                             ; 3.30                     ;
++---------------------------------------------+--------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                      ;
++----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                         ; Entity Name             ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
+; |MikroP                                      ; 942 (81)            ; 184 (0)                   ; 0           ; 0          ; 2            ; 0       ; 1         ; 65   ; 0            ; 0          ; |MikroP                                                                                                                                                     ; MikroP                  ; work         ;
+;    |Eq05_Prime:CPU|                          ; 630 (166)           ; 144 (0)                   ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU                                                                                                                                      ; Eq05_Prime              ; work         ;
+;       |Eq05_BancoRegistradores:U_BANCO_REG|  ; 11 (11)             ; 112 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_BancoRegistradores:U_BANCO_REG                                                                                                  ; Eq05_BancoRegistradores ; work         ;
+;          |Eq05_Registrador:uut1|             ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_BancoRegistradores:U_BANCO_REG|Eq05_Registrador:uut1                                                                            ; Eq05_Registrador        ; work         ;
+;          |Eq05_Registrador:uut2|             ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_BancoRegistradores:U_BANCO_REG|Eq05_Registrador:uut2                                                                            ; Eq05_Registrador        ; work         ;
+;          |Eq05_Registrador:uut3|             ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_BancoRegistradores:U_BANCO_REG|Eq05_Registrador:uut3                                                                            ; Eq05_Registrador        ; work         ;
+;          |Eq05_Registrador:uut4|             ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_BancoRegistradores:U_BANCO_REG|Eq05_Registrador:uut4                                                                            ; Eq05_Registrador        ; work         ;
+;          |Eq05_Registrador:uut5|             ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_BancoRegistradores:U_BANCO_REG|Eq05_Registrador:uut5                                                                            ; Eq05_Registrador        ; work         ;
+;          |Eq05_Registrador:uut6|             ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_BancoRegistradores:U_BANCO_REG|Eq05_Registrador:uut6                                                                            ; Eq05_Registrador        ; work         ;
+;          |Eq05_Registrador:uut7|             ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_BancoRegistradores:U_BANCO_REG|Eq05_Registrador:uut7                                                                            ; Eq05_Registrador        ; work         ;
+;       |Eq05_ULA:U_ULA|                       ; 372 (84)            ; 0 (0)                     ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_ULA:U_ULA                                                                                                                       ; Eq05_ULA                ; work         ;
+;          |lpm_divide:Div0|                   ; 288 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_ULA:U_ULA|lpm_divide:Div0                                                                                                       ; lpm_divide              ; work         ;
+;             |lpm_divide_bvl:auto_generated|  ; 288 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_ULA:U_ULA|lpm_divide:Div0|lpm_divide_bvl:auto_generated                                                                         ; lpm_divide_bvl          ; work         ;
+;                |sign_div_unsign_dnh:divider| ; 288 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_ULA:U_ULA|lpm_divide:Div0|lpm_divide_bvl:auto_generated|sign_div_unsign_dnh:divider                                             ; sign_div_unsign_dnh     ; work         ;
+;                   |alt_u_div_4le:divider|    ; 288 (285)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_ULA:U_ULA|lpm_divide:Div0|lpm_divide_bvl:auto_generated|sign_div_unsign_dnh:divider|alt_u_div_4le:divider                       ; alt_u_div_4le           ; work         ;
+;                      |add_sub_t3c:add_sub_0| ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_ULA:U_ULA|lpm_divide:Div0|lpm_divide_bvl:auto_generated|sign_div_unsign_dnh:divider|alt_u_div_4le:divider|add_sub_t3c:add_sub_0 ; add_sub_t3c             ; work         ;
+;                      |add_sub_u3c:add_sub_1| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_ULA:U_ULA|lpm_divide:Div0|lpm_divide_bvl:auto_generated|sign_div_unsign_dnh:divider|alt_u_div_4le:divider|add_sub_u3c:add_sub_1 ; add_sub_u3c             ; work         ;
+;          |lpm_mult:Mult0|                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_ULA:U_ULA|lpm_mult:Mult0                                                                                                        ; lpm_mult                ; work         ;
+;             |mult_tns:auto_generated|        ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_ULA:U_ULA|lpm_mult:Mult0|mult_tns:auto_generated                                                                                ; mult_tns                ; work         ;
+;       |Eq05_maq_estados:U_FSM|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_maq_estados:U_FSM                                                                                                               ; Eq05_maq_estados        ; work         ;
+;       |Eq05_program_counter:U_PC|            ; 13 (13)             ; 13 (13)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_program_counter:U_PC                                                                                                            ; Eq05_program_counter    ; work         ;
+;       |Eq05_rom:U_ROM|                       ; 45 (45)             ; 18 (18)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_rom:U_ROM                                                                                                                       ; Eq05_rom                ; work         ;
+;       |Eq05_unidade_controle:U_UC|           ; 22 (22)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|Eq05_Prime:CPU|Eq05_unidade_controle:U_UC                                                                                                           ; Eq05_unidade_controle   ; work         ;
+;    |ramDisp:RAMeDISP|                        ; 231 (55)            ; 40 (40)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|ramDisp:RAMeDISP                                                                                                                                    ; ramDisp                 ; work         ;
+;       |bin2bcd:conv|                         ; 141 (141)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|ramDisp:RAMeDISP|bin2bcd:conv                                                                                                                       ; bin2bcd                 ; work         ;
+;       |hex_7seg:H0|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|ramDisp:RAMeDISP|hex_7seg:H0                                                                                                                        ; hex_7seg                ; work         ;
+;       |hex_7seg:H1|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|ramDisp:RAMeDISP|hex_7seg:H1                                                                                                                        ; hex_7seg                ; work         ;
+;       |hex_7seg:H2|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|ramDisp:RAMeDISP|hex_7seg:H2                                                                                                                        ; hex_7seg                ; work         ;
+;       |hex_7seg:H3|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|ramDisp:RAMeDISP|hex_7seg:H3                                                                                                                        ; hex_7seg                ; work         ;
+;       |hex_7seg:H4|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MikroP|ramDisp:RAMeDISP|hex_7seg:H4                                                                                                                        ; hex_7seg                ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 0           ;
+; Simple Multipliers (18-bit)           ; 1           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 2           ;
+; Signed Embedded Multipliers           ; 0           ;
+; Unsigned Embedded Multipliers         ; 1           ;
+; Mixed Sign Embedded Multipliers       ; 0           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
++----------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                           ;
++-----------------------------------------------------+----------------------------------------+
+; Register name                                       ; Reason for Removal                     ;
++-----------------------------------------------------+----------------------------------------+
+; Eq05_Prime:CPU|Eq05_rom:U_ROM|dado_s[5,6,19,21..23] ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 6               ;                                        ;
++-----------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 184   ;
+; Number of registers using Synchronous Clear  ; 21    ;
+; Number of registers using Synchronous Load   ; 34    ;
+; Number of registers using Asynchronous Clear ; 150   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 149   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |MikroP|ramDisp:RAMeDISP|contador[1]                               ;
+; 3:1                ; 21 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; Yes        ; |MikroP|ramDisp:RAMeDISP|contador[20]                              ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |MikroP|ramDisp:RAMeDISP|conteudo_reg[14]                          ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |MikroP|Eq05_Prime:CPU|Eq05_unidade_controle:U_UC|ula_op_out[0]    ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |MikroP|Eq05_Prime:CPU|Eq05_unidade_controle:U_UC|reg_addr1_out[2] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |MikroP|Eq05_Prime:CPU|Eq05_unidade_controle:U_UC|reg_addr2_out[1] ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; No         ; |MikroP|Eq05_Prime:CPU|Eq05_ULA:U_ULA|Mux0                         ;
+; 9:1                ; 16 bits   ; 96 LEs        ; 80 LEs               ; 16 LEs                 ; No         ; |MikroP|Eq05_Prime:CPU|s_ula_in_A[6]                               ;
+; 9:1                ; 5 bits    ; 30 LEs        ; 25 LEs               ; 5 LEs                  ; No         ; |MikroP|Eq05_Prime:CPU|s_ula_in_B[13]                              ;
+; 9:1                ; 11 bits   ; 66 LEs        ; 55 LEs               ; 11 LEs                 ; No         ; |MikroP|Eq05_Prime:CPU|s_ula_in_B[0]                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Eq05_Prime:CPU|Eq05_ULA:U_ULA|lpm_divide:Div0 ;
++------------------------+----------------+------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                 ;
++------------------------+----------------+------------------------------------------------------+
+; LPM_WIDTHN             ; 16             ; Untyped                                              ;
+; LPM_WIDTHD             ; 16             ; Untyped                                              ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                              ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                              ;
+; LPM_PIPELINE           ; 0              ; Untyped                                              ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                              ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                              ;
+; CBXI_PARAMETER         ; lpm_divide_bvl ; Untyped                                              ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                              ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                              ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                         ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                       ;
++------------------------+----------------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Eq05_Prime:CPU|Eq05_ULA:U_ULA|lpm_mult:Mult0 ;
++------------------------------------------------+----------+-----------------------------------+
+; Parameter Name                                 ; Value    ; Type                              ;
++------------------------------------------------+----------+-----------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON       ; AUTO_CARRY                        ;
+; IGNORE_CARRY_BUFFERS                           ; OFF      ; IGNORE_CARRY                      ;
+; AUTO_CASCADE_CHAINS                            ; ON       ; AUTO_CASCADE                      ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF      ; IGNORE_CASCADE                    ;
+; LPM_WIDTHA                                     ; 16       ; Untyped                           ;
+; LPM_WIDTHB                                     ; 16       ; Untyped                           ;
+; LPM_WIDTHP                                     ; 32       ; Untyped                           ;
+; LPM_WIDTHR                                     ; 32       ; Untyped                           ;
+; LPM_WIDTHS                                     ; 1        ; Untyped                           ;
+; LPM_REPRESENTATION                             ; UNSIGNED ; Untyped                           ;
+; LPM_PIPELINE                                   ; 0        ; Untyped                           ;
+; LATENCY                                        ; 0        ; Untyped                           ;
+; INPUT_A_IS_CONSTANT                            ; NO       ; Untyped                           ;
+; INPUT_B_IS_CONSTANT                            ; NO       ; Untyped                           ;
+; USE_EAB                                        ; OFF      ; Untyped                           ;
+; MAXIMIZE_SPEED                                 ; 6        ; Untyped                           ;
+; DEVICE_FAMILY                                  ; MAX 10   ; Untyped                           ;
+; CARRY_CHAIN                                    ; MANUAL   ; Untyped                           ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT      ; TECH_MAPPER_APEX20K               ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO     ; Untyped                           ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0        ; Untyped                           ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0        ; Untyped                           ;
+; CBXI_PARAMETER                                 ; mult_tns ; Untyped                           ;
+; INPUT_A_FIXED_VALUE                            ; Bx       ; Untyped                           ;
+; INPUT_B_FIXED_VALUE                            ; Bx       ; Untyped                           ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF      ; Untyped                           ;
++------------------------------------------------+----------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                       ;
++---------------------------------------+----------------------------------------------+
+; Name                                  ; Value                                        ;
++---------------------------------------+----------------------------------------------+
+; Number of entity instances            ; 1                                            ;
+; Entity Instance                       ; Eq05_Prime:CPU|Eq05_ULA:U_ULA|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 16                                           ;
+;     -- LPM_WIDTHB                     ; 16                                           ;
+;     -- LPM_WIDTHP                     ; 32                                           ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                     ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                           ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                           ;
+;     -- USE_EAB                        ; OFF                                          ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                         ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                           ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                           ;
++---------------------------------------+----------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ramDisp:RAMeDISP"                                                                              ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; endereco[6..0]  ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; endereco[15..7] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; wr_en           ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; dado_out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Eq05_Prime:CPU|Eq05_ULA:U_ULA"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Eq05_Prime:CPU|Eq05_BancoRegistradores:U_BANCO_REG|Eq05_Registrador:uut0"               ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; data_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Eq05_Prime:CPU"                                                                                ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; debug_estado    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; debug_pc[12..8] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; debug_instrucao ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; debug_ula_in_a  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; debug_ula_in_b  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; debug_ula_out   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 65                          ;
+; cycloneiii_ff         ; 184                         ;
+;     CLR               ; 1                           ;
+;     ENA CLR           ; 115                         ;
+;     ENA CLR SCLR SLD  ; 21                          ;
+;     ENA CLR SLD       ; 13                          ;
+;     plain             ; 34                          ;
+; cycloneiii_lcell_comb ; 950                         ;
+;     arith             ; 203                         ;
+;         2 data inputs ; 55                          ;
+;         3 data inputs ; 148                         ;
+;     normal            ; 747                         ;
+;         0 data inputs ; 16                          ;
+;         1 data inputs ; 11                          ;
+;         2 data inputs ; 53                          ;
+;         3 data inputs ; 83                          ;
+;         4 data inputs ; 584                         ;
+; cycloneiii_mac_mult   ; 1                           ;
+; cycloneiii_mac_out    ; 1                           ;
+;                       ;                             ;
+; Max LUT depth         ; 57.70                       ;
+; Average LUT depth     ; 31.91                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:12     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+    Info: Processing started: Mon Dec 15 00:20:17 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Eq05-Valid -c MikroP
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file ramdisp16bits.vhd
+    Info (12022): Found design unit 1: ramDisp-a_ram File: C:/Users/giuli/Downloads/Eq05-Valid/RAMDisp16bits.vhd Line: 49
+    Info (12023): Found entity 1: ramDisp File: C:/Users/giuli/Downloads/Eq05-Valid/RAMDisp16bits.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file mikrop.vhd
+    Info (12022): Found design unit 1: MikroP-LogicFunction File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 21
+    Info (12023): Found entity 1: MikroP File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file hex.vhd
+    Info (12022): Found design unit 1: hex_7seg-Behavior File: C:/Users/giuli/Downloads/Eq05-Valid/Hex.vhd Line: 19
+    Info (12023): Found entity 1: hex_7seg File: C:/Users/giuli/Downloads/Eq05-Valid/Hex.vhd Line: 12
+Info (12021): Found 2 design units, including 1 entities, in source file eq05-unidade_controle.vhd
+    Info (12022): Found design unit 1: Eq05_unidade_controle-a_uc File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-unidade_controle.vhd Line: 31
+    Info (12023): Found entity 1: Eq05_unidade_controle File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-unidade_controle.vhd Line: 12
+Info (12021): Found 2 design units, including 1 entities, in source file eq05-ula.vhd
+    Info (12022): Found design unit 1: Eq05_ULA-Behavioral File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-ULA.vhd Line: 23
+    Info (12023): Found entity 1: Eq05_ULA File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-ULA.vhd Line: 12
+Info (12021): Found 2 design units, including 1 entities, in source file eq05-rom.vhd
+    Info (12022): Found design unit 1: Eq05_rom-a_rom File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-rom.vhd Line: 20
+    Info (12023): Found entity 1: Eq05_rom File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-rom.vhd Line: 12
+Info (12021): Found 2 design units, including 1 entities, in source file eq05-registrador.vhd
+    Info (12022): Found design unit 1: Eq05_Registrador-a_registrador File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-Registrador.vhd Line: 23
+    Info (12023): Found entity 1: Eq05_Registrador File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-Registrador.vhd Line: 13
+Info (12021): Found 2 design units, including 1 entities, in source file eq05-program_counter.vhd
+    Info (12022): Found design unit 1: Eq05_program_counter-a_pc File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-program_counter.vhd Line: 23
+    Info (12023): Found entity 1: Eq05_program_counter File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-program_counter.vhd Line: 13
+Info (12021): Found 2 design units, including 1 entities, in source file eq05-prime.vhd
+    Info (12022): Found design unit 1: Eq05_Prime-a_Eq05_Prime File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-Prime.vhd Line: 32
+    Info (12023): Found entity 1: Eq05_Prime File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-Prime.vhd Line: 12
+Info (12021): Found 2 design units, including 1 entities, in source file eq05-maq_estados.vhd
+    Info (12022): Found design unit 1: Eq05_maq_estados-a_maq_estados File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-maq_estados.vhd Line: 20
+    Info (12023): Found entity 1: Eq05_maq_estados File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-maq_estados.vhd Line: 12
+Info (12021): Found 2 design units, including 1 entities, in source file eq05-bancoregistradores.vhd
+    Info (12022): Found design unit 1: Eq05_BancoRegistradores-a_banco_reg File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-BancoRegistradores.vhd Line: 32
+    Info (12023): Found entity 1: Eq05_BancoRegistradores File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-BancoRegistradores.vhd Line: 13
+Info (12021): Found 2 design units, including 1 entities, in source file 16bits2bcd.vhd
+    Info (12022): Found design unit 1: bin2bcd-fum File: C:/Users/giuli/Downloads/Eq05-Valid/16bits2bcd.vhd Line: 22
+    Info (12023): Found entity 1: bin2bcd File: C:/Users/giuli/Downloads/Eq05-Valid/16bits2bcd.vhd Line: 11
+Info (12127): Elaborating entity "MikroP" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at MikroP.vhd(70): object "ram_out" assigned a value but never read File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 70
+Info (12128): Elaborating entity "Eq05_Prime" for hierarchy "Eq05_Prime:CPU" File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 77
+Info (12128): Elaborating entity "Eq05_maq_estados" for hierarchy "Eq05_Prime:CPU|Eq05_maq_estados:U_FSM" File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-Prime.vhd Line: 98
+Info (12128): Elaborating entity "Eq05_program_counter" for hierarchy "Eq05_Prime:CPU|Eq05_program_counter:U_PC" File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-Prime.vhd Line: 100
+Info (12128): Elaborating entity "Eq05_rom" for hierarchy "Eq05_Prime:CPU|Eq05_rom:U_ROM" File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-Prime.vhd Line: 102
+Info (12128): Elaborating entity "Eq05_unidade_controle" for hierarchy "Eq05_Prime:CPU|Eq05_unidade_controle:U_UC" File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-Prime.vhd Line: 104
+Info (12128): Elaborating entity "Eq05_BancoRegistradores" for hierarchy "Eq05_Prime:CPU|Eq05_BancoRegistradores:U_BANCO_REG" File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-Prime.vhd Line: 113
+Warning (10036): Verilog HDL or VHDL warning at Eq05-BancoRegistradores.vhd(46): object "out0" assigned a value but never read File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-BancoRegistradores.vhd Line: 46
+Info (12128): Elaborating entity "Eq05_Registrador" for hierarchy "Eq05_Prime:CPU|Eq05_BancoRegistradores:U_BANCO_REG|Eq05_Registrador:uut0" File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-BancoRegistradores.vhd Line: 49
+Info (12128): Elaborating entity "Eq05_ULA" for hierarchy "Eq05_Prime:CPU|Eq05_ULA:U_ULA" File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-Prime.vhd Line: 127
+Info (12128): Elaborating entity "ramDisp" for hierarchy "ramDisp:RAMeDISP" File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 96
+Info (12128): Elaborating entity "bin2bcd" for hierarchy "ramDisp:RAMeDISP|bin2bcd:conv" File: C:/Users/giuli/Downloads/Eq05-Valid/RAMDisp16bits.vhd Line: 131
+Info (12128): Elaborating entity "hex_7seg" for hierarchy "ramDisp:RAMeDISP|hex_7seg:H0" File: C:/Users/giuli/Downloads/Eq05-Valid/RAMDisp16bits.vhd Line: 149
+Info (278001): Inferred 2 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Eq05_Prime:CPU|Eq05_ULA:U_ULA|Div0" File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-ULA.vhd Line: 43
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Eq05_Prime:CPU|Eq05_ULA:U_ULA|Mult0" File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-ULA.vhd Line: 46
+Info (12130): Elaborated megafunction instantiation "Eq05_Prime:CPU|Eq05_ULA:U_ULA|lpm_divide:Div0" File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-ULA.vhd Line: 43
+Info (12133): Instantiated megafunction "Eq05_Prime:CPU|Eq05_ULA:U_ULA|lpm_divide:Div0" with the following parameter: File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-ULA.vhd Line: 43
+    Info (12134): Parameter "LPM_WIDTHN" = "16"
+    Info (12134): Parameter "LPM_WIDTHD" = "16"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_bvl.tdf
+    Info (12023): Found entity 1: lpm_divide_bvl File: C:/Users/giuli/Downloads/Eq05-Valid/db/lpm_divide_bvl.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_dnh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_dnh File: C:/Users/giuli/Downloads/Eq05-Valid/db/sign_div_unsign_dnh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_4le.tdf
+    Info (12023): Found entity 1: alt_u_div_4le File: C:/Users/giuli/Downloads/Eq05-Valid/db/alt_u_div_4le.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_t3c.tdf
+    Info (12023): Found entity 1: add_sub_t3c File: C:/Users/giuli/Downloads/Eq05-Valid/db/add_sub_t3c.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_u3c.tdf
+    Info (12023): Found entity 1: add_sub_u3c File: C:/Users/giuli/Downloads/Eq05-Valid/db/add_sub_u3c.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "Eq05_Prime:CPU|Eq05_ULA:U_ULA|lpm_mult:Mult0" File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-ULA.vhd Line: 46
+Info (12133): Instantiated megafunction "Eq05_Prime:CPU|Eq05_ULA:U_ULA|lpm_mult:Mult0" with the following parameter: File: C:/Users/giuli/Downloads/Eq05-Valid/Eq05-ULA.vhd Line: 46
+    Info (12134): Parameter "LPM_WIDTHA" = "16"
+    Info (12134): Parameter "LPM_WIDTHB" = "16"
+    Info (12134): Parameter "LPM_WIDTHP" = "32"
+    Info (12134): Parameter "LPM_WIDTHR" = "32"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_tns.tdf
+    Info (12023): Found entity 1: mult_tns File: C:/Users/giuli/Downloads/Eq05-Valid/db/mult_tns.tdf Line: 29
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LED_HW[8]" is stuck at GND File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 11
+    Warning (13410): Pin "LED_HW[9]" is stuck at GND File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 11
+    Warning (13410): Pin "HEX5_HW[0]" is stuck at VCC File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 17
+    Warning (13410): Pin "HEX5_HW[1]" is stuck at VCC File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 17
+    Warning (13410): Pin "HEX5_HW[2]" is stuck at VCC File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 17
+    Warning (13410): Pin "HEX5_HW[3]" is stuck at VCC File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 17
+    Warning (13410): Pin "HEX5_HW[4]" is stuck at VCC File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 17
+    Warning (13410): Pin "HEX5_HW[5]" is stuck at VCC File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 17
+    Warning (13410): Pin "HEX5_HW[6]" is stuck at VCC File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 17
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 6 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY1_HW" File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 9
+    Warning (15610): No output dependent on input pin "SWITCH_HW[3]" File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SWITCH_HW[4]" File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SWITCH_HW[5]" File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SWITCH_HW[6]" File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SWITCH_HW[7]" File: C:/Users/giuli/Downloads/Eq05-Valid/MikroP.vhd Line: 10
+Info (21057): Implemented 1122 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 52 output pins
+    Info (21061): Implemented 1055 logic cells
+    Info (21062): Implemented 2 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 4838 megabytes
+    Info: Processing ended: Mon Dec 15 00:20:57 2025
+    Info: Elapsed time: 00:00:40
+    Info: Total CPU time (on all processors): 00:01:02
+
+

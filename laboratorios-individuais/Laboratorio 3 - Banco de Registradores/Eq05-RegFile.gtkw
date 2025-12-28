@@ -1,0 +1,32 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Fri Oct 03 03:27:52 2025
+[*]
+[dumpfile] "C:\arqcomp\lab3.1\Eq05-RegFile.ghw"
+[dumpfile_mtime] "Fri Oct 03 03:21:08 2025"
+[dumpfile_size] 4323
+[savefile] "C:\arqcomp\lab3.1\Eq05-RegFile.gtkw"
+[timestart] 65710000
+[size] 1000 583
+[pos] 214 313
+*-21.753653 66080000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.tb_banco_reg.
+[sst_width] 197
+[signals_width] 208
+[sst_expanded] 1
+[sst_vpaned_height] 147
+@22
+#{top.tb_banco_reg.s_addr1[2:0]} top.tb_banco_reg.s_addr1[2] top.tb_banco_reg.s_addr1[1] top.tb_banco_reg.s_addr1[0]
+#{top.tb_banco_reg.s_addr2[2:0]} top.tb_banco_reg.s_addr2[2] top.tb_banco_reg.s_addr2[1] top.tb_banco_reg.s_addr2[0]
+#{top.tb_banco_reg.s_addr3[2:0]} top.tb_banco_reg.s_addr3[2] top.tb_banco_reg.s_addr3[1] top.tb_banco_reg.s_addr3[0]
+@28
+top.tb_banco_reg.s_clk
+top.tb_banco_reg.s_write_control
+@22
+#{top.tb_banco_reg.s_write_data[15:0]} top.tb_banco_reg.s_write_data[15] top.tb_banco_reg.s_write_data[14] top.tb_banco_reg.s_write_data[13] top.tb_banco_reg.s_write_data[12] top.tb_banco_reg.s_write_data[11] top.tb_banco_reg.s_write_data[10] top.tb_banco_reg.s_write_data[9] top.tb_banco_reg.s_write_data[8] top.tb_banco_reg.s_write_data[7] top.tb_banco_reg.s_write_data[6] top.tb_banco_reg.s_write_data[5] top.tb_banco_reg.s_write_data[4] top.tb_banco_reg.s_write_data[3] top.tb_banco_reg.s_write_data[2] top.tb_banco_reg.s_write_data[1] top.tb_banco_reg.s_write_data[0]
+#{top.tb_banco_reg.s_read_data1[15:0]} top.tb_banco_reg.s_read_data1[15] top.tb_banco_reg.s_read_data1[14] top.tb_banco_reg.s_read_data1[13] top.tb_banco_reg.s_read_data1[12] top.tb_banco_reg.s_read_data1[11] top.tb_banco_reg.s_read_data1[10] top.tb_banco_reg.s_read_data1[9] top.tb_banco_reg.s_read_data1[8] top.tb_banco_reg.s_read_data1[7] top.tb_banco_reg.s_read_data1[6] top.tb_banco_reg.s_read_data1[5] top.tb_banco_reg.s_read_data1[4] top.tb_banco_reg.s_read_data1[3] top.tb_banco_reg.s_read_data1[2] top.tb_banco_reg.s_read_data1[1] top.tb_banco_reg.s_read_data1[0]
+@23
+#{top.tb_banco_reg.s_read_data2[15:0]} top.tb_banco_reg.s_read_data2[15] top.tb_banco_reg.s_read_data2[14] top.tb_banco_reg.s_read_data2[13] top.tb_banco_reg.s_read_data2[12] top.tb_banco_reg.s_read_data2[11] top.tb_banco_reg.s_read_data2[10] top.tb_banco_reg.s_read_data2[9] top.tb_banco_reg.s_read_data2[8] top.tb_banco_reg.s_read_data2[7] top.tb_banco_reg.s_read_data2[6] top.tb_banco_reg.s_read_data2[5] top.tb_banco_reg.s_read_data2[4] top.tb_banco_reg.s_read_data2[3] top.tb_banco_reg.s_read_data2[2] top.tb_banco_reg.s_read_data2[1] top.tb_banco_reg.s_read_data2[0]
+[pattern_trace] 1
+[pattern_trace] 0

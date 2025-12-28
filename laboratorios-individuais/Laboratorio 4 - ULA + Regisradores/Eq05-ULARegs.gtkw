@@ -1,0 +1,49 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Mon Oct 20 20:01:26 2025
+[*]
+[dumpfile] "C:\Users\KABUM\Documents\UTFPR\ArqComp\Lab4\Eq05-ULARegs.ghw"
+[dumpfile_mtime] "Mon Oct 20 19:51:35 2025"
+[dumpfile_size] 4850
+[savefile] "C:\Users\KABUM\Documents\UTFPR\ArqComp\Lab4\Eq05-ULARegs.gtkw"
+[timestart] 0
+[size] 1785 600
+[pos] 28 33
+*-27.249655 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.eq05_testbench.
+[treeopen] top.eq05_testbench.uut.
+[treeopen] top.eq05_testbench.uut.mux_inb_unit.
+[treeopen] top.eq05_testbench.uut.regfile_unit.
+[treeopen] top.eq05_testbench.uut.regfile_unit.uut6.
+[treeopen] top.eq05_testbench.uut.regfile_unit.uut7.
+[treeopen] top.eq05_testbench.uut.ula_unit.
+[sst_width] 603
+[signals_width] 190
+[sst_expanded] 1
+[sst_vpaned_height] 276
+@28
+#{top.eq05_testbench.uut.regfile_unit.registeradress1[2:0]} top.eq05_testbench.uut.regfile_unit.registeradress1[2] top.eq05_testbench.uut.regfile_unit.registeradress1[1] top.eq05_testbench.uut.regfile_unit.registeradress1[0]
+#{top.eq05_testbench.uut.regfile_unit.registeradress2[2:0]} top.eq05_testbench.uut.regfile_unit.registeradress2[2] top.eq05_testbench.uut.regfile_unit.registeradress2[1] top.eq05_testbench.uut.regfile_unit.registeradress2[0]
+#{top.eq05_testbench.uut.regfile_unit.registeradress3[2:0]} top.eq05_testbench.uut.regfile_unit.registeradress3[2] top.eq05_testbench.uut.regfile_unit.registeradress3[1] top.eq05_testbench.uut.regfile_unit.registeradress3[0]
+@22
+#{top.eq05_testbench.uut.regfile_unit.read_data1[15:0]} top.eq05_testbench.uut.regfile_unit.read_data1[15] top.eq05_testbench.uut.regfile_unit.read_data1[14] top.eq05_testbench.uut.regfile_unit.read_data1[13] top.eq05_testbench.uut.regfile_unit.read_data1[12] top.eq05_testbench.uut.regfile_unit.read_data1[11] top.eq05_testbench.uut.regfile_unit.read_data1[10] top.eq05_testbench.uut.regfile_unit.read_data1[9] top.eq05_testbench.uut.regfile_unit.read_data1[8] top.eq05_testbench.uut.regfile_unit.read_data1[7] top.eq05_testbench.uut.regfile_unit.read_data1[6] top.eq05_testbench.uut.regfile_unit.read_data1[5] top.eq05_testbench.uut.regfile_unit.read_data1[4] top.eq05_testbench.uut.regfile_unit.read_data1[3] top.eq05_testbench.uut.regfile_unit.read_data1[2] top.eq05_testbench.uut.regfile_unit.read_data1[1] top.eq05_testbench.uut.regfile_unit.read_data1[0]
+#{top.eq05_testbench.uut.regfile_unit.read_data2[15:0]} top.eq05_testbench.uut.regfile_unit.read_data2[15] top.eq05_testbench.uut.regfile_unit.read_data2[14] top.eq05_testbench.uut.regfile_unit.read_data2[13] top.eq05_testbench.uut.regfile_unit.read_data2[12] top.eq05_testbench.uut.regfile_unit.read_data2[11] top.eq05_testbench.uut.regfile_unit.read_data2[10] top.eq05_testbench.uut.regfile_unit.read_data2[9] top.eq05_testbench.uut.regfile_unit.read_data2[8] top.eq05_testbench.uut.regfile_unit.read_data2[7] top.eq05_testbench.uut.regfile_unit.read_data2[6] top.eq05_testbench.uut.regfile_unit.read_data2[5] top.eq05_testbench.uut.regfile_unit.read_data2[4] top.eq05_testbench.uut.regfile_unit.read_data2[3] top.eq05_testbench.uut.regfile_unit.read_data2[2] top.eq05_testbench.uut.regfile_unit.read_data2[1] top.eq05_testbench.uut.regfile_unit.read_data2[0]
+@28
+top.eq05_testbench.s_clk
+top.eq05_testbench.s_rst
+@22
+#{top.eq05_testbench.uut.ula_unit.in_a[15:0]} top.eq05_testbench.uut.ula_unit.in_a[15] top.eq05_testbench.uut.ula_unit.in_a[14] top.eq05_testbench.uut.ula_unit.in_a[13] top.eq05_testbench.uut.ula_unit.in_a[12] top.eq05_testbench.uut.ula_unit.in_a[11] top.eq05_testbench.uut.ula_unit.in_a[10] top.eq05_testbench.uut.ula_unit.in_a[9] top.eq05_testbench.uut.ula_unit.in_a[8] top.eq05_testbench.uut.ula_unit.in_a[7] top.eq05_testbench.uut.ula_unit.in_a[6] top.eq05_testbench.uut.ula_unit.in_a[5] top.eq05_testbench.uut.ula_unit.in_a[4] top.eq05_testbench.uut.ula_unit.in_a[3] top.eq05_testbench.uut.ula_unit.in_a[2] top.eq05_testbench.uut.ula_unit.in_a[1] top.eq05_testbench.uut.ula_unit.in_a[0]
+#{top.eq05_testbench.uut.ula_unit.in_b[15:0]} top.eq05_testbench.uut.ula_unit.in_b[15] top.eq05_testbench.uut.ula_unit.in_b[14] top.eq05_testbench.uut.ula_unit.in_b[13] top.eq05_testbench.uut.ula_unit.in_b[12] top.eq05_testbench.uut.ula_unit.in_b[11] top.eq05_testbench.uut.ula_unit.in_b[10] top.eq05_testbench.uut.ula_unit.in_b[9] top.eq05_testbench.uut.ula_unit.in_b[8] top.eq05_testbench.uut.ula_unit.in_b[7] top.eq05_testbench.uut.ula_unit.in_b[6] top.eq05_testbench.uut.ula_unit.in_b[5] top.eq05_testbench.uut.ula_unit.in_b[4] top.eq05_testbench.uut.ula_unit.in_b[3] top.eq05_testbench.uut.ula_unit.in_b[2] top.eq05_testbench.uut.ula_unit.in_b[1] top.eq05_testbench.uut.ula_unit.in_b[0]
+@28
+#{top.eq05_testbench.uut.ula_unit.op[1:0]} top.eq05_testbench.uut.ula_unit.op[1] top.eq05_testbench.uut.ula_unit.op[0]
+@22
+#{top.eq05_testbench.uut.ula_unit.out_ula[15:0]} top.eq05_testbench.uut.ula_unit.out_ula[15] top.eq05_testbench.uut.ula_unit.out_ula[14] top.eq05_testbench.uut.ula_unit.out_ula[13] top.eq05_testbench.uut.ula_unit.out_ula[12] top.eq05_testbench.uut.ula_unit.out_ula[11] top.eq05_testbench.uut.ula_unit.out_ula[10] top.eq05_testbench.uut.ula_unit.out_ula[9] top.eq05_testbench.uut.ula_unit.out_ula[8] top.eq05_testbench.uut.ula_unit.out_ula[7] top.eq05_testbench.uut.ula_unit.out_ula[6] top.eq05_testbench.uut.ula_unit.out_ula[5] top.eq05_testbench.uut.ula_unit.out_ula[4] top.eq05_testbench.uut.ula_unit.out_ula[3] top.eq05_testbench.uut.ula_unit.out_ula[2] top.eq05_testbench.uut.ula_unit.out_ula[1] top.eq05_testbench.uut.ula_unit.out_ula[0]
+@28
+top.eq05_testbench.uut.ula_unit.zero
+top.eq05_testbench.uut.ula_unit.gt
+top.eq05_testbench.uut.regfile_unit.write_control
+@22
+#{top.eq05_testbench.uut.regfile_unit.writing_data[15:0]} top.eq05_testbench.uut.regfile_unit.writing_data[15] top.eq05_testbench.uut.regfile_unit.writing_data[14] top.eq05_testbench.uut.regfile_unit.writing_data[13] top.eq05_testbench.uut.regfile_unit.writing_data[12] top.eq05_testbench.uut.regfile_unit.writing_data[11] top.eq05_testbench.uut.regfile_unit.writing_data[10] top.eq05_testbench.uut.regfile_unit.writing_data[9] top.eq05_testbench.uut.regfile_unit.writing_data[8] top.eq05_testbench.uut.regfile_unit.writing_data[7] top.eq05_testbench.uut.regfile_unit.writing_data[6] top.eq05_testbench.uut.regfile_unit.writing_data[5] top.eq05_testbench.uut.regfile_unit.writing_data[4] top.eq05_testbench.uut.regfile_unit.writing_data[3] top.eq05_testbench.uut.regfile_unit.writing_data[2] top.eq05_testbench.uut.regfile_unit.writing_data[1] top.eq05_testbench.uut.regfile_unit.writing_data[0]
+[pattern_trace] 1
+[pattern_trace] 0

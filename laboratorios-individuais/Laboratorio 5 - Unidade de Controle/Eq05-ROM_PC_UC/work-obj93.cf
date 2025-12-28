@@ -1,0 +1,16 @@
+v 4
+file . "Eq05-ROM_PC_UC_tb.vhd" "ca45e8f7c9aa136aafb40698c4952c60930c4fb6" "20251020154948.407":
+  entity eq05_rom_pc_uc_tb at 10( 373) + 0 on 199;
+  architecture tb of eq05_rom_pc_uc_tb at 17( 491) + 0 on 200;
+file . "Eq05-maq_estados.vhd" "ff458ee5b2003252fe080d9ae513f862e664e5b2" "20251020154948.344":
+  entity eq05_maq_estados at 9( 371) + 0 on 195;
+  architecture a_maq_estados of eq05_maq_estados at 20( 610) + 0 on 196;
+file . "Eq05-rom.vhd" "0a237048da4dfc10d0a4cd18d6ef17b4effaca0e" "20251020154948.296":
+  entity eq05_rom at 9( 371) + 0 on 191;
+  architecture a_rom of eq05_rom at 22( 698) + 0 on 192;
+file . "Eq05-program_counter.vhd" "53f8e363db6d068412ee8403fe60cda3a67bd340" "20251020154948.323":
+  entity eq05_program_counter at 9( 371) + 0 on 193;
+  architecture a_pc of eq05_program_counter at 23( 846) + 0 on 194;
+file . "Eq05-ROM_PC_UC.vhd" "0d03e93ae14d99eab626be32186384e93e3eb64a" "20251020154948.376":
+  entity eq05_rom_pc_uc at 9( 371) + 0 on 197;
+  architecture a_rom_pc_uc of eq05_rom_pc_uc at 23( 730) + 0 on 198;

@@ -1,0 +1,209 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LED_HW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_HW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_HW[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_HW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_HW[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_HW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_HW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_HW[7]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0_HW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0_HW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0_HW[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0_HW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0_HW[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0_HW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0_HW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_HW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_HW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_HW[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_HW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_HW[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_HW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_HW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2_HW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2_HW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2_HW[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2_HW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2_HW[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2_HW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2_HW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3_HW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3_HW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3_HW[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3_HW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3_HW[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3_HW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3_HW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4_HW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4_HW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4_HW[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4_HW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4_HW[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4_HW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4_HW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RST_HW",
+					"strict" : false
+				},
+				{
+					"name" : "SWITCH_HW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SWITCH_HW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SWITCH_HW[2]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK_H_HW",
+					"strict" : false
+				},
+				{
+					"name" : "SWITCH_HW[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SWITCH_HW[8]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

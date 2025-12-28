@@ -1,0 +1,35 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Mon Nov 17 02:08:38 2025
+[*]
+[dumpfile] "C:\Users\giuli\Downloads\calculadora\Eq05-Calc\Eq05-Calc.ghw"
+[dumpfile_mtime] "Mon Nov 17 02:04:27 2025"
+[dumpfile_size] 316281
+[savefile] "C:\Users\giuli\Downloads\calculadora\Eq05-Calc\Eq05-Calc.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] 138 81
+*-26.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.eq05_calc_tb.
+[sst_width] 197
+[signals_width] 166
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@28
+top.eq05_calc_tb.s_rst
+top.eq05_calc_tb.s_clk
+top.eq05_calc_tb.s_estado
+@22
+#{top.eq05_calc_tb.s_pc[12:0]} top.eq05_calc_tb.s_pc[12] top.eq05_calc_tb.s_pc[11] top.eq05_calc_tb.s_pc[10] top.eq05_calc_tb.s_pc[9] top.eq05_calc_tb.s_pc[8] top.eq05_calc_tb.s_pc[7] top.eq05_calc_tb.s_pc[6] top.eq05_calc_tb.s_pc[5] top.eq05_calc_tb.s_pc[4] top.eq05_calc_tb.s_pc[3] top.eq05_calc_tb.s_pc[2] top.eq05_calc_tb.s_pc[1] top.eq05_calc_tb.s_pc[0]
+#{top.eq05_calc_tb.s_instrucao[23:0]} top.eq05_calc_tb.s_instrucao[23] top.eq05_calc_tb.s_instrucao[22] top.eq05_calc_tb.s_instrucao[21] top.eq05_calc_tb.s_instrucao[20] top.eq05_calc_tb.s_instrucao[19] top.eq05_calc_tb.s_instrucao[18] top.eq05_calc_tb.s_instrucao[17] top.eq05_calc_tb.s_instrucao[16] top.eq05_calc_tb.s_instrucao[15] top.eq05_calc_tb.s_instrucao[14] top.eq05_calc_tb.s_instrucao[13] top.eq05_calc_tb.s_instrucao[12] top.eq05_calc_tb.s_instrucao[11] top.eq05_calc_tb.s_instrucao[10] top.eq05_calc_tb.s_instrucao[9] top.eq05_calc_tb.s_instrucao[8] top.eq05_calc_tb.s_instrucao[7] top.eq05_calc_tb.s_instrucao[6] top.eq05_calc_tb.s_instrucao[5] top.eq05_calc_tb.s_instrucao[4] top.eq05_calc_tb.s_instrucao[3] top.eq05_calc_tb.s_instrucao[2] top.eq05_calc_tb.s_instrucao[1] top.eq05_calc_tb.s_instrucao[0]
+#{top.eq05_calc_tb.s_ula_in_a[15:0]} top.eq05_calc_tb.s_ula_in_a[15] top.eq05_calc_tb.s_ula_in_a[14] top.eq05_calc_tb.s_ula_in_a[13] top.eq05_calc_tb.s_ula_in_a[12] top.eq05_calc_tb.s_ula_in_a[11] top.eq05_calc_tb.s_ula_in_a[10] top.eq05_calc_tb.s_ula_in_a[9] top.eq05_calc_tb.s_ula_in_a[8] top.eq05_calc_tb.s_ula_in_a[7] top.eq05_calc_tb.s_ula_in_a[6] top.eq05_calc_tb.s_ula_in_a[5] top.eq05_calc_tb.s_ula_in_a[4] top.eq05_calc_tb.s_ula_in_a[3] top.eq05_calc_tb.s_ula_in_a[2] top.eq05_calc_tb.s_ula_in_a[1] top.eq05_calc_tb.s_ula_in_a[0]
+#{top.eq05_calc_tb.s_ula_in_b[15:0]} top.eq05_calc_tb.s_ula_in_b[15] top.eq05_calc_tb.s_ula_in_b[14] top.eq05_calc_tb.s_ula_in_b[13] top.eq05_calc_tb.s_ula_in_b[12] top.eq05_calc_tb.s_ula_in_b[11] top.eq05_calc_tb.s_ula_in_b[10] top.eq05_calc_tb.s_ula_in_b[9] top.eq05_calc_tb.s_ula_in_b[8] top.eq05_calc_tb.s_ula_in_b[7] top.eq05_calc_tb.s_ula_in_b[6] top.eq05_calc_tb.s_ula_in_b[5] top.eq05_calc_tb.s_ula_in_b[4] top.eq05_calc_tb.s_ula_in_b[3] top.eq05_calc_tb.s_ula_in_b[2] top.eq05_calc_tb.s_ula_in_b[1] top.eq05_calc_tb.s_ula_in_b[0]
+#{top.eq05_calc_tb.s_ula_out[15:0]} top.eq05_calc_tb.s_ula_out[15] top.eq05_calc_tb.s_ula_out[14] top.eq05_calc_tb.s_ula_out[13] top.eq05_calc_tb.s_ula_out[12] top.eq05_calc_tb.s_ula_out[11] top.eq05_calc_tb.s_ula_out[10] top.eq05_calc_tb.s_ula_out[9] top.eq05_calc_tb.s_ula_out[8] top.eq05_calc_tb.s_ula_out[7] top.eq05_calc_tb.s_ula_out[6] top.eq05_calc_tb.s_ula_out[5] top.eq05_calc_tb.s_ula_out[4] top.eq05_calc_tb.s_ula_out[3] top.eq05_calc_tb.s_ula_out[2] top.eq05_calc_tb.s_ula_out[1] top.eq05_calc_tb.s_ula_out[0]
+#{top.eq05_calc_tb.s_r4[15:0]} top.eq05_calc_tb.s_r4[15] top.eq05_calc_tb.s_r4[14] top.eq05_calc_tb.s_r4[13] top.eq05_calc_tb.s_r4[12] top.eq05_calc_tb.s_r4[11] top.eq05_calc_tb.s_r4[10] top.eq05_calc_tb.s_r4[9] top.eq05_calc_tb.s_r4[8] top.eq05_calc_tb.s_r4[7] top.eq05_calc_tb.s_r4[6] top.eq05_calc_tb.s_r4[5] top.eq05_calc_tb.s_r4[4] top.eq05_calc_tb.s_r4[3] top.eq05_calc_tb.s_r4[2] top.eq05_calc_tb.s_r4[1] top.eq05_calc_tb.s_r4[0]
+#{top.eq05_calc_tb.s_r5[15:0]} top.eq05_calc_tb.s_r5[15] top.eq05_calc_tb.s_r5[14] top.eq05_calc_tb.s_r5[13] top.eq05_calc_tb.s_r5[12] top.eq05_calc_tb.s_r5[11] top.eq05_calc_tb.s_r5[10] top.eq05_calc_tb.s_r5[9] top.eq05_calc_tb.s_r5[8] top.eq05_calc_tb.s_r5[7] top.eq05_calc_tb.s_r5[6] top.eq05_calc_tb.s_r5[5] top.eq05_calc_tb.s_r5[4] top.eq05_calc_tb.s_r5[3] top.eq05_calc_tb.s_r5[2] top.eq05_calc_tb.s_r5[1] top.eq05_calc_tb.s_r5[0]
+#{top.eq05_calc_tb.s_r6[15:0]} top.eq05_calc_tb.s_r6[15] top.eq05_calc_tb.s_r6[14] top.eq05_calc_tb.s_r6[13] top.eq05_calc_tb.s_r6[12] top.eq05_calc_tb.s_r6[11] top.eq05_calc_tb.s_r6[10] top.eq05_calc_tb.s_r6[9] top.eq05_calc_tb.s_r6[8] top.eq05_calc_tb.s_r6[7] top.eq05_calc_tb.s_r6[6] top.eq05_calc_tb.s_r6[5] top.eq05_calc_tb.s_r6[4] top.eq05_calc_tb.s_r6[3] top.eq05_calc_tb.s_r6[2] top.eq05_calc_tb.s_r6[1] top.eq05_calc_tb.s_r6[0]
+@23
+#{top.eq05_calc_tb.s_r7[15:0]} top.eq05_calc_tb.s_r7[15] top.eq05_calc_tb.s_r7[14] top.eq05_calc_tb.s_r7[13] top.eq05_calc_tb.s_r7[12] top.eq05_calc_tb.s_r7[11] top.eq05_calc_tb.s_r7[10] top.eq05_calc_tb.s_r7[9] top.eq05_calc_tb.s_r7[8] top.eq05_calc_tb.s_r7[7] top.eq05_calc_tb.s_r7[6] top.eq05_calc_tb.s_r7[5] top.eq05_calc_tb.s_r7[4] top.eq05_calc_tb.s_r7[3] top.eq05_calc_tb.s_r7[2] top.eq05_calc_tb.s_r7[1] top.eq05_calc_tb.s_r7[0]
+[pattern_trace] 1
+[pattern_trace] 0

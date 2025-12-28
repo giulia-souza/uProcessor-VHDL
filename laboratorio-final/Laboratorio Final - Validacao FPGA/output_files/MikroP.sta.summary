@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'ramDisp:RAMeDISP|clk_div'
+Slack : -54.009
+TNS   : -4338.192
+
+Type  : Slow 1200mV 85C Model Setup 'CLK_H_HW'
+Slack : -3.516
+TNS   : -78.002
+
+Type  : Slow 1200mV 85C Model Hold 'ramDisp:RAMeDISP|clk_div'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLK_H_HW'
+Slack : 0.427
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK_H_HW'
+Slack : -3.000
+TNS   : -36.672
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ramDisp:RAMeDISP|clk_div'
+Slack : -1.403
+TNS   : -224.480
+
+Type  : Slow 1200mV 0C Model Setup 'ramDisp:RAMeDISP|clk_div'
+Slack : -49.137
+TNS   : -3955.612
+
+Type  : Slow 1200mV 0C Model Setup 'CLK_H_HW'
+Slack : -3.125
+TNS   : -69.405
+
+Type  : Slow 1200mV 0C Model Hold 'ramDisp:RAMeDISP|clk_div'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK_H_HW'
+Slack : 0.394
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK_H_HW'
+Slack : -3.000
+TNS   : -36.672
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ramDisp:RAMeDISP|clk_div'
+Slack : -1.403
+TNS   : -224.480
+
+Type  : Fast 1200mV 0C Model Setup 'ramDisp:RAMeDISP|clk_div'
+Slack : -21.620
+TNS   : -1721.848
+
+Type  : Fast 1200mV 0C Model Setup 'CLK_H_HW'
+Slack : -0.880
+TNS   : -17.756
+
+Type  : Fast 1200mV 0C Model Hold 'ramDisp:RAMeDISP|clk_div'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK_H_HW'
+Slack : 0.171
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK_H_HW'
+Slack : -3.000
+TNS   : -27.878
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ramDisp:RAMeDISP|clk_div'
+Slack : -1.000
+TNS   : -160.000
+
+------------------------------------------------------------

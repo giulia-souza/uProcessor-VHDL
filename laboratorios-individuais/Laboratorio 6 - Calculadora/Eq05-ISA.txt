@@ -1,0 +1,54 @@
+Equipe 05: Giovana Valim (2449633), Giulia de Souza Leite (2619075)
+ISA do Processador (S08 - 24 bits) 
+
+Barramento de Instrucao: 24 bits
+Opcode: 8 bits [23:16]
+Constante / Endereco Imediato: 13 bits [12:0]
+Registrador Destino (Rd): 3 bits [15:13]
+Registrador Fonte 1 (Rs): 3 bits [12:10] (Usado no Formato R)
+Registrador Fonte 2 (Rt): 3 bits [9:7]  (Usado no Formato R)
+
+---
+Formatos de Instrucao
+---
+
+Formato R (Registrador): add, sub, div, mov
+Bits: [OPCODE(8)] [Rd(3)] [Rs(3)] [Rt(3)] [---NAO USADO(7)---]
+Ex:   add R6, R4, R5  (R6 <- R4 + R5)
+
+Formato I (Imediato / Salto): addi, jmp
+Bits: [OPCODE(8)] [Rd(3)] [IMEDIATO(13)]
+Ex1:  addi R4, 4      (R4 <- 4)
+Ex2:  jmp 15          (PC <- 15)
+
+
+---
+Opcodes Implementados
+---
+NOP   (0x00): Nenhuma operacao
+      - Formato: N/A
+      - Binario: b"00000000_000_000000000000" (x"000000")
+
+ADDI  (0x01): Carrega constante (R[Rd] <- Const13)
+      - Formato: I
+      - Ex: addi R4, 4 -> b"00000001_100_000000000100" (x"018004")
+
+JMP   (0x02): Salto incondicional (PC <- Endereco13)
+      - Formato: I
+      - Ex: jmp 15     -> b"00000010_000_000000001111" (x"02000F")
+
+ADD   (0x10): Soma (R[Rd] <- R[Rs] + R[Rt])
+      - Formato: R
+      - Ex: add R6, R4, R5 -> b"00010000_110_100_101_0000000" (x"10D280")
+
+SUB   (0x11): Subtracao (R[Rd] <- R[Rs] - R[Rt])
+      - Formato: R
+      - Ex: sub R6, R6, R3 -> b"00010001_110_110_011_0000000" (x"11D980")
+
+DIV   (0x12): Divisao (R[Rd] <- R[Rs] / R[Rt])
+      - Formato: R
+      - Ex: div R7, R6, R3 -> b"00010010_111_110_011_0000000" (x"12F980")
+
+MOV   (0x13): Move (Copia) Registrador (R[Rd] <- R[Rs])
+      - Formato: R (Implementado como: add Rd, Rs, R0)
+      - Ex: mov R4, R6     -> b"00010011_100_110_000_0000000" (x"139800")

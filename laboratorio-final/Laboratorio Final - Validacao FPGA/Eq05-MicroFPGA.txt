@@ -1,0 +1,35 @@
+=====================================================================================================================================
+PROJETO: PROCESSADOR DE NUMEROS PRIMOS (LAB 8)
+PLATAFORMA: FPGA DE10-LITE
+EQUIPE: GIOVANA VALIM E GIULIA DE SOUZA LEITE
+=====================================================================================================================================
+
+Este documento descreve as funcionalidades de controle e monitoramento do processador implementado na FPGA. 
+O sistema permite a visualização dos registradores internos através dos displays de 7 segmentos, controlados pelas chaves de seleção.
+
+
+1. Seleção de Registradores (Monitoramento) 
+Utilize as chaves SW[2..0] para selecionar qual registrador será exibido nos displays (HEX):
+
+000 (SW2=0, SW1=0, SW0=0): Exibe R7 (Último número primo encontrado).
+
+001 (SW2=0, SW1=0, SW0=1): Exibe R6 (Contador de números primos encontrados).
+
+010 (SW2=0, SW1=1, SW0=0): Exibe R5 (Registrador temporário/cálculos).
+
+011 (SW2=0, SW1=1, SW0=1): Exibe R4 (Resto da divisão - Módulo).
+
+100 (SW2=1, SW1=0, SW0=0): Exibe R3 (Divisor atual).
+
+101 (SW2=1, SW1=0, SW0=1): Exibe R2 (Candidato atual sendo testado).
+
+110 (SW2=1, SW1=1, SW0=0): Exibe R1 (Constante 1 - Incremento).
+
+
+2. Controle de Execução
+
+SW8 (Turbo): Quando em '1', acelera a frequência do clock (Modo Rápido).
+
+SW9 (Halt): Quando em '1', pausa a execução do processador (Congela o estado atual).
+
+KEY0 (Reset): Reinicia todo o sistema e zera os contadores.

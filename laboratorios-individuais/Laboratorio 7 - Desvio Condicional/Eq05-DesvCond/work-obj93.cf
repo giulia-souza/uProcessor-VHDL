@@ -1,0 +1,28 @@
+v 4
+file . "Eq05-DesvCond_tb.vhd" "4cf4962e3f9a0feba51f2ad48b33c1b526235cef" "20251124100834.110":
+  entity eq05_desvcond_tb at 8( 336) + 0 on 27;
+  architecture tb of eq05_desvcond_tb at 15( 453) + 0 on 28;
+file . "Eq05-unidade_controle.vhd" "e9c87f022b160d95794542308455cbebe4730b23" "20251124100834.055":
+  entity eq05_unidade_controle at 8( 336) + 0 on 23;
+  architecture a_uc of eq05_unidade_controle at 31( 1093) + 0 on 24;
+file . "Eq05-program_counter.vhd" "5fdb62fa5967499d5ab23c55dc1f9fc54a1edfa1" "20251124100834.011":
+  entity eq05_program_counter at 9( 369) + 0 on 19;
+  architecture a_pc of eq05_program_counter at 23( 830) + 0 on 20;
+file . "Eq05-ULA.vhd" "6b74e46e2a8952209975e155d4e4f6fdab5d06af" "20251124100833.967":
+  entity eq05_ula at 8( 336) + 0 on 15;
+  architecture behavioral of eq05_ula at 23( 757) + 0 on 16;
+file . "Eq05-Registrador.vhd" "2991c108bb34eb03375d56fb2495083acbfbdfa8" "20251124100833.921":
+  entity eq05_registrador at 10( 395) + 0 on 11;
+  architecture a_registrador of eq05_registrador at 24( 721) + 0 on 12;
+file . "Eq05-BancoRegistradores.vhd" "b71caa516540a48332a10877f2065ac2da615d1f" "20251124100833.945":
+  entity eq05_bancoregistradores at 8( 336) + 0 on 13;
+  architecture a_banco_reg of eq05_bancoregistradores at 28( 1134) + 0 on 14;
+file . "Eq05-maq_estados.vhd" "7abbbbad218cf0e0924f840b2c33199c02a91814" "20251124100833.988":
+  entity eq05_maq_estados at 9( 379) + 0 on 17;
+  architecture a_maq_estados of eq05_maq_estados at 20( 618) + 0 on 18;
+file . "Eq05-rom.vhd" "ac6e13b28ddea77f654d3e02360767d08c0e0e7c" "20251124100834.033":
+  entity eq05_rom at 8( 336) + 0 on 21;
+  architecture a_rom of eq05_rom at 20( 595) + 0 on 22;
+file . "Eq05-DesvCond.vhd" "19cce9d2f53388f31fb7da1f7d4561706da2b795" "20251124100834.078":
+  entity eq05_desvcond at 8( 336) + 0 on 25;
+  architecture a_eq05_desvcond of eq05_desvcond at 29( 1087) + 0 on 26;

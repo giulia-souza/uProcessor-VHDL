@@ -1,0 +1,67 @@
+Equipe: Giovana Valim (2449633), Giulia de Souza Leite (2619075)
+ISA do Processador (S08 - 24 bits) - Lab 7 (Desvios Condicionais)
+
+Barramento de Instrucao: 24 bits
+Opcode: 8 bits [23:16]
+
+---
+Formatos de Instrucao
+---
+
+1. Formato I (Imediato)
+   Instrucoes: ADDI
+   Estrutura: [OPCODE(8)] [Rd(3)] [IMEDIATO(13)]
+   Bits:      [23..16]    [15..13] [12..0]
+   Descricao: Carrega uma constante de 13 bits no registrador Rd.
+   Exemplo:   addi R4, 4  -> b"00000001_100_0000000000100" (x"018004")
+
+2. Formato R (Registrador)
+   Instrucoes: ADD, SUB, DIV, MOV
+   Estrutura: [OPCODE(8)] [Rd(3)] [Rs(3)] [Rt(3)] [ZERO(7)]
+   Bits:      [23..16]    [15..13] [12..10] [9..7]  [6..0]
+   Descricao: Opera sobre registradores. 
+              - Rd: Registrador de Destino
+              - Rs: Primeiro Operando (Fonte 1)
+              - Rt: Segundo Operando (Fonte 2)
+   Exemplo:   add R6, R4, R5 -> b"00010000_110_100_101_0000000" (x"10D280")
+
+3. Formato B (Branch/Jump)
+   Instrucoes: BEQ, JMP
+   Estrutura: [OPCODE(8)] [Ra(3)] [Rb(3)] [ENDERECO(10)]
+   Bits:      [23..16]    [15..13] [12..10] [9..0]
+   Descricao: Instrucoes de controle de fluxo.
+              - Ra e Rb: Registradores a serem comparados (usado no BEQ).
+              - Endereco: Destino do salto (10 bits, absoluto).
+   
+   Detalhes:
+   * JMP (Salto Incondicional):
+     Ignora os campos Ra e Rb. Carrega 'Endereco' diretamente no PC.
+     Exemplo: jmp 10 -> b"00000010_000_000_0000001010" (x"02000A")
+
+   * BEQ (Branch if Equal):
+     Compara o conteudo de Ra com Rb.
+     Se (Ra == Rb), entao PC <- Endereco.
+     Senao, PC <- PC + 1.
+     Exemplo: beq R5, R0, 10 -> b"00000011_101_000_0000001010" (x"03A00A")
+
+---
+Tabela de Opcodes Implementados
+---
+
+| Mnemonico | Opcode (Hex) | Formato | Acao (Resumo)                |
+| :-------- | :----------- | :------ | :--------------------------- |
+| NOP       | 00           | -       | Nenhuma operacao             |
+| ADDI      | 01           | I       | R[Rd] <- Imediato13          |
+| JMP       | 02           | B       | PC <- Endereco10             |
+| BEQ       | 03           | B       | Se R[Ra]==R[Rb], PC<-End10   |
+| ADD       | 10           | R       | R[Rd] <- R[Rs] + R[Rt]       |
+| SUB       | 11           | R       | R[Rd] <- R[Rs] - R[Rt]       |
+| DIV       | 12           | R       | R[Rd] <- R[Rs] / R[Rt]       |
+| MOV       | 13           | R       | R[Rd] <- R[Rs] (via ADD R0)  |
+
+---
+Mapeamento de Hardware (Lab 7)
+---
+* A comparacao do BEQ e realizada pela ULA atraves de uma subtracao.
+* A Flag ZERO da ULA e conectada a Unidade de Controle.
+* O Endereco de salto (10 bits) e preenchido com zeros a esquerda para completar os 13 bits do PC.

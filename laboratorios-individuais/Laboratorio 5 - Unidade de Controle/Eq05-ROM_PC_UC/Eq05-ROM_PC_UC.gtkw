@@ -1,0 +1,34 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Mon Oct 20 15:55:36 2025
+[*]
+[dumpfile] "C:\Users\KABUM\Documents\UTFPR\ArqComp\Eq05-ROM_PC_UC\Eq05-ROM_PC_UC.ghw"
+[dumpfile_mtime] "Mon Oct 20 15:49:48 2025"
+[dumpfile_size] 5075
+[savefile] "C:\Users\KABUM\Documents\UTFPR\ArqComp\Eq05-ROM_PC_UC\Eq05-ROM_PC_UC.gtkw"
+[timestart] 0
+[size] 1630 600
+[pos] 203 95
+*-24.671341 557700000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.eq05_rom_pc_uc_tb.
+[treeopen] top.eq05_rom_pc_uc_tb.dut.
+[treeopen] top.eq05_rom_pc_uc_tb.dut.u_pc.
+[treeopen] top.eq05_rom_pc_uc_tb.dut.u_rom.
+[sst_width] 473
+[signals_width] 174
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@28
+top.eq05_rom_pc_uc_tb.clk
+top.eq05_rom_pc_uc_tb.rst
+top.eq05_rom_pc_uc_tb.dut.estado_s
+@22
+#{top.eq05_rom_pc_uc_tb.dut.pc_endereco_o[6:0]} top.eq05_rom_pc_uc_tb.dut.pc_endereco_o[6] top.eq05_rom_pc_uc_tb.dut.pc_endereco_o[5] top.eq05_rom_pc_uc_tb.dut.pc_endereco_o[4] top.eq05_rom_pc_uc_tb.dut.pc_endereco_o[3] top.eq05_rom_pc_uc_tb.dut.pc_endereco_o[2] top.eq05_rom_pc_uc_tb.dut.pc_endereco_o[1] top.eq05_rom_pc_uc_tb.dut.pc_endereco_o[0]
+#{top.eq05_rom_pc_uc_tb.dut.pc_next_s[6:0]} top.eq05_rom_pc_uc_tb.dut.pc_next_s[6] top.eq05_rom_pc_uc_tb.dut.pc_next_s[5] top.eq05_rom_pc_uc_tb.dut.pc_next_s[4] top.eq05_rom_pc_uc_tb.dut.pc_next_s[3] top.eq05_rom_pc_uc_tb.dut.pc_next_s[2] top.eq05_rom_pc_uc_tb.dut.pc_next_s[1] top.eq05_rom_pc_uc_tb.dut.pc_next_s[0]
+@28
+top.eq05_rom_pc_uc_tb.dut.jump_en_reg
+@22
+#{top.eq05_rom_pc_uc_tb.dut.rom_dado_o[7:0]} top.eq05_rom_pc_uc_tb.dut.rom_dado_o[7] top.eq05_rom_pc_uc_tb.dut.rom_dado_o[6] top.eq05_rom_pc_uc_tb.dut.rom_dado_o[5] top.eq05_rom_pc_uc_tb.dut.rom_dado_o[4] top.eq05_rom_pc_uc_tb.dut.rom_dado_o[3] top.eq05_rom_pc_uc_tb.dut.rom_dado_o[2] top.eq05_rom_pc_uc_tb.dut.rom_dado_o[1] top.eq05_rom_pc_uc_tb.dut.rom_dado_o[0]
+[pattern_trace] 1
+[pattern_trace] 0

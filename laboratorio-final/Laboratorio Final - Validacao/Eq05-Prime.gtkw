@@ -1,0 +1,30 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Mon Dec 15 02:28:57 2025
+[*]
+[dumpfile] "C:\Users\giuli\Downloads\Eq05-Prime_ori\Eq05-Prime\Eq05-Prime.ghw"
+[dumpfile_mtime] "Mon Dec 15 02:20:39 2025"
+[dumpfile_size] 3737342
+[savefile] "C:\Users\giuli\Downloads\Eq05-Prime_ori\Eq05-Prime\Eq05-Prime.gtkw"
+[timestart] 223000000000
+[size] 1920 1017
+[pos] -1 -1
+*-38.000000 955988000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.eq05_prime_tb.
+[treeopen] top.eq05_prime_tb.dut.
+[treeopen] top.eq05_prime_tb.dut.u_uc.
+[sst_width] 366
+[signals_width] 303
+[sst_expanded] 1
+[sst_vpaned_height] 300
+@28
+top.eq05_prime_tb.dut.clk
+@22
+#{top.eq05_prime_tb.dut.u_uc.opcode[7:0]} top.eq05_prime_tb.dut.u_uc.opcode[7] top.eq05_prime_tb.dut.u_uc.opcode[6] top.eq05_prime_tb.dut.u_uc.opcode[5] top.eq05_prime_tb.dut.u_uc.opcode[4] top.eq05_prime_tb.dut.u_uc.opcode[3] top.eq05_prime_tb.dut.u_uc.opcode[2] top.eq05_prime_tb.dut.u_uc.opcode[1] top.eq05_prime_tb.dut.u_uc.opcode[0]
+#{top.eq05_prime_tb.dut.debug_pc[12:0]} top.eq05_prime_tb.dut.debug_pc[12] top.eq05_prime_tb.dut.debug_pc[11] top.eq05_prime_tb.dut.debug_pc[10] top.eq05_prime_tb.dut.debug_pc[9] top.eq05_prime_tb.dut.debug_pc[8] top.eq05_prime_tb.dut.debug_pc[7] top.eq05_prime_tb.dut.debug_pc[6] top.eq05_prime_tb.dut.debug_pc[5] top.eq05_prime_tb.dut.debug_pc[4] top.eq05_prime_tb.dut.debug_pc[3] top.eq05_prime_tb.dut.debug_pc[2] top.eq05_prime_tb.dut.debug_pc[1] top.eq05_prime_tb.dut.debug_pc[0]
+@24
+#{top.eq05_prime_tb.dut.debug_r6[15:0]} top.eq05_prime_tb.dut.debug_r6[15] top.eq05_prime_tb.dut.debug_r6[14] top.eq05_prime_tb.dut.debug_r6[13] top.eq05_prime_tb.dut.debug_r6[12] top.eq05_prime_tb.dut.debug_r6[11] top.eq05_prime_tb.dut.debug_r6[10] top.eq05_prime_tb.dut.debug_r6[9] top.eq05_prime_tb.dut.debug_r6[8] top.eq05_prime_tb.dut.debug_r6[7] top.eq05_prime_tb.dut.debug_r6[6] top.eq05_prime_tb.dut.debug_r6[5] top.eq05_prime_tb.dut.debug_r6[4] top.eq05_prime_tb.dut.debug_r6[3] top.eq05_prime_tb.dut.debug_r6[2] top.eq05_prime_tb.dut.debug_r6[1] top.eq05_prime_tb.dut.debug_r6[0]
+#{top.eq05_prime_tb.dut.debug_r7[15:0]} top.eq05_prime_tb.dut.debug_r7[15] top.eq05_prime_tb.dut.debug_r7[14] top.eq05_prime_tb.dut.debug_r7[13] top.eq05_prime_tb.dut.debug_r7[12] top.eq05_prime_tb.dut.debug_r7[11] top.eq05_prime_tb.dut.debug_r7[10] top.eq05_prime_tb.dut.debug_r7[9] top.eq05_prime_tb.dut.debug_r7[8] top.eq05_prime_tb.dut.debug_r7[7] top.eq05_prime_tb.dut.debug_r7[6] top.eq05_prime_tb.dut.debug_r7[5] top.eq05_prime_tb.dut.debug_r7[4] top.eq05_prime_tb.dut.debug_r7[3] top.eq05_prime_tb.dut.debug_r7[2] top.eq05_prime_tb.dut.debug_r7[1] top.eq05_prime_tb.dut.debug_r7[0]
+[pattern_trace] 1
+[pattern_trace] 0
